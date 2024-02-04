@@ -1,0 +1,264 @@
+:root {
+  --primary-color: #af2024;
+  --secondary-color: #e2c799;
+
+  --black: #000000;
+  --white: #ffffff;
+}
+/* style button */
+button.main-btn {
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  border: none;
+  margin-top: 25px;
+  color: var(--white);
+  font-family: "Metamorphous";
+}
+
+button.main-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--black);
+}
+
+/* hre element */
+.hre {
+  display: flex;
+  margin: 50px auto;
+  max-width: 50%;
+}
+
+@media (max-width: 770px) {
+  .hre {
+    max-width: 100%;
+  }
+}
+/* -------------------------------- */
+/* Calendar */
+.content__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.content__h2 h2 {
+  font-size: 22px;
+}
+.calendar__item {
+  display: flex;
+  gap: 30px;
+  align-items: start;
+  position: relative;
+  padding: 10px;
+  margin-bottom: 40px;
+  /* border: #af2024 2px solid;  */
+}
+
+.calendar__item:after {
+  position: absolute;
+  content: "";
+  background-color: var(--secondary-color);
+  width: 50%;
+  height: 3px;
+  left: 20px;
+  top: 35px;
+}
+
+.calendar__item--icon {
+  width: 40px;
+  min-width: 30px;
+  position: relative;
+  z-index: 1;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.calendar__item--icon::after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  top: -30%;
+  left: -50%;
+  z-index: -1;
+}
+
+.calendar__item--titel,
+.team__name {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+.calendar__item--elm {
+  padding: 10px 0;
+}
+
+.calendar--date {
+  font-weight: 900;
+}
+
+.calendar {
+  position: relative;
+  margin-top: 30px;
+}
+
+.calendar::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 92%;
+  left: 48px;
+  top: 20px;
+  background-color: var(--primary-color);
+}
+.col-md-3 {
+  width: 170px;
+}
+.calendar__item--detail {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 770px) {
+  .calendar__item--detail {
+    flex-direction: row;
+  }
+
+  .calendar__item--elm {
+    padding: 10px 0 10px 0;
+  }
+  .calendar__item {
+    align-items: start;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 770px) {
+  .calendar__item--elm {
+    padding: 10px 0;
+  }
+}
+
+/* ----------contact form----------- */
+.contactContainer {
+    margin-top: 30px;
+}
+
+input,
+textarea {
+  width: 80%;
+  padding-left: 7px;
+}
+
+textarea,
+input[type="submit"] {
+  margin-left: 4px;
+}
+
+input[type="submit"]{
+    margin-top: 10px;
+}
+
+input {
+  margin-bottom: 10px;
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 5px 10px;
+  height: 35px;
+  border-radius: 10px;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--primary-color);
+}
+
+@media (max-width:770px){
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .form {
+        margin-top: 30px;
+    }
+    
+}
+
+/* --------------Map-------------- */
+g path:hover,
+g path.active {
+  fill: var(--primary-color);
+  cursor: pointer;
+}
+
+g path.cls-5:hover,
+g path.cls-8:hover {
+  fill: none;
+}
+
+
+g text.dest:hover,
+g text.active{
+  cursor: pointer;
+  fill: var(--primary-color);
+}
+
+.list-mobile {
+  display: none;
+}
+
+/* style accordion */
+.accordion-button {
+  color: var(--primary-color);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  background-color: var(--secondary-color);
+}
+
+
+.accordion-button:not(.collapsed) {
+  color: var(--primary-color);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/sort-up-solid.svg);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+
+.accordion-button.collapsed::after {
+  background-image: url(../images/sort-down-solid.svg);
+
+}
+
+.accordion {
+  --bs-accordion-border-color: none;
+  --bs-accordion-active-bg: none;
+}
+
+.accordion-item:first-of-type .accordion-button
+{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed
+{
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+@media (max-width:700px){
+  .list-mobile {
+    display: flex;
+  }
+
+  .calendarDesktop{
+    display: none;
+  }
+}
+
+
+/* style carousel button */
+

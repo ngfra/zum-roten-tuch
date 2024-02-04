@@ -1,0 +1,144 @@
+:root {
+  --primary-color: #af2024;
+  --secondary-color: #e2c799;
+
+  --black: #000000;
+  --white: #ffffff;
+}
+
+nav {
+  height: 170px;
+  background-image: url(../images/nav1.svg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  padding-top: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+/* style logo */
+.navigation__logo {
+  max-width: 7%;
+  min-width: 150px;
+  position: absolute;
+  z-index: 1;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation__menu {
+  display: flex;
+  gap: 20px;
+}
+
+/* style nav link */
+.navigation__link {
+  color: var(--black);
+  text-decoration: none;
+  font-family: "Metamorphous";
+  font-size: 20px;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+  color: var(--white);
+  display: inline-block;
+}
+
+
+
+/* Style Logo */
+.navigation__hre {
+  max-width: 370px;
+}
+
+/* Style hamburger menu */
+.navigation__hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.navigation__hamburger--span {
+  display: block;
+  width: 40px;
+  height: 3px;
+  margin: 10px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .navigation__hamburger {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 5;
+  }
+
+  .navigation__hre {
+    display: none;
+  }
+
+  /* burger menu animation */
+  .navigation__hamburger.active .navigation__hamburger--span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navigation__hamburger.active .navigation__hamburger--span:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+  }
+  
+  .navigation__hamburger.active .navigation__hamburger--span:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+
+  .navigation__menu {
+    position: fixed;
+    background-image: url(../images/nav1.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    top: 90px;
+    left: 0;
+    display: none;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.7s;
+    z-index: 1;
+    color: white;
+    padding-top: 40px; padding-bottom: 40px;
+  }
+
+  .navigation__link {
+   padding: 15px;
+  }
+
+  .navigation__link.navigation__link--end {
+    padding-bottom: 50px;
+  }
+
+  .navigation__menu.active {
+    left: 0;
+    top: 0;
+    display: flex;
+  }
+}
+
