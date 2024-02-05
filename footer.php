@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footer row">
             <div class="footer__col col-md-4">
-                <a href="Impressum-AGB.pdf" target="_blank">AGB</a>
+                <a href="Impressum-AGB.pdf" target="_blank">Datenschutz</a>
 
                 <a href="Impressum-AGB.pdf" target="_blank">Impressum</a>
             </div>

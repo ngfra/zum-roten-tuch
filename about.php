@@ -35,52 +35,56 @@
     </header>
 
     <main>
-        <div class="container team__container">
-            <div class="row team__box">
-                <!--Team Block left-->
-                <div class="col-sm-12 col-md-4 team__image">
-                    <img src="images/staff02.jpg" alt="Team" title="Team" />
+        <div class="content">
+            <div class="container team__container">
+                <div class="row team__box">
+                    <!--Team Block left-->
+                    <div class="col-sm-12 col-md-4 team__image">
+                        <img class="w-100" src="images/staff02.jpg" alt="Team" title="Team" />
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 team__text">
+                        <p>
+                            <span class="team__name">Moni </span>ist Familienoberhaupt und kreativer Kopf ist zuständig
+                            für
+                            die Entwürfe, die Stoffwahl, das
+                            Schneidern und bringt fundiertes historisches Wissen mit.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 team__text">
-                    <p>
-                        <span class="team__name">Moni </span>ist Familienoberhaupt und kreativer Kopf ist zuständig für
-                        die Entwürfe, die Stoffwahl, das
-                        Schneidern und bringt fundiertes historisches Wissen mit.
-                    </p>
-                </div>
-            </div>
+                <div class="row flex-row-reverse team__box">
+                    <!--Team Block right-->
+                    <div class="col-sm-12 col-md-4 team__image">
+                        <img class="w-100" src="images/staff03.jpg" alt="Team" title="Team" />
+                    </div>
 
-            <div class="row flex-row-reverse team__box">
-                <!--Team Block right-->
-                <div class="col-sm-12 col-md-4 team__image">
-                    <img src="images/staff03.jpg" alt="Team" title="Team" />
-                </div>
-
-                <div class="col-sm-12 col-md-4 team__text">
-                    <p>
-                        <span class="team__name">Thomas</span> ist zuständig für den Zuschnitt der Stoffe, die
-                        Konstruktion unserer Marktzelte und
-                        Stände sowie für das technische Drumherum.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row team__box">
-                <!--Team Block left-->
-                <div class="col-sm-12 col-md-4 team__image">
-                    <img src="images/staff01.jpg" alt="Team" title="Team" />
+                    <div class="col-sm-12 col-md-4 team__text">
+                        <p>
+                            <span class="team__name">Thomas</span> ist zuständig für den Zuschnitt der Stoffe, die
+                            Konstruktion unserer Marktzelte und
+                            Stände sowie für das technische Drumherum.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 team__text">
-                    <p>
-                        <span class="team__name">Oliver</span> kümmert sich um alle wirtschaftlichen und
-                        organisatorischen Belange, vom Kassazettel bis
-                        hin zum Marktkalender.
-                    </p>
+                <div class="row team__box">
+                    <!--Team Block left-->
+                    <div class="col-sm-12 col-md-4 team__image">
+                        <img class="w-100" src="images/staff01.jpg" alt="Team" title="Team" />
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 team__text">
+                        <p>
+                            <span class="team__name">Oliver</span> kümmert sich um alle wirtschaftlichen und
+                            organisatorischen Belange, vom Kassazettel bis
+                            hin zum Marktkalender.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
+
 
         <div class="container">
             <div class="hre">
